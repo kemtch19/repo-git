@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+
+<body>
+  <form action="formulario.html" method="get">
+    <input type="text" name="username">
+    <input type="text" name="lastname" value="Hola">
+    <!-- El atributo name es un atributo de configuración interna ya que nos sirve para poder funcionar con algún lenguaje de programación com lo es JavaScript entonces ahh bueno al darle submit le enviamos al servidor este input con el nombre username para poder moverlo y trabajar con este y hacer validaciones, etc. -->
+    <!-- El value es lo que va a tener dentro de la variable name que ya le hemos descrito con anterioridad en el caso de los inputs es lo que van a copiar las personas dentro del input pero si no queremos que se vaya en blanco le ponemos un value por defecto que le va a llegar al servidor y le va a decir que el input con nombre lastname tiene adentro el valor hola o lo que escriba el usuario  -->
+    <input type="submit" value="saludos">
+  </form>
+</body>
+
+</html>

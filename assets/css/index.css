@@ -1,0 +1,105 @@
+/* Recordemos que las clases comienzan con .nombre y el id con #nombre todo esto con el fin de recordar que las clases se le asignan a un grupo de objetos o elementos y el id solamente a un objeto o elemento en toda la página y que ningun otro elemento tiene el mismo id */
+span {
+  /* Elemento */
+  color: blue;
+  font-size: 30px;
+}
+
+.hola {
+  /* Clase */
+  color: burlywood;
+}
+
+#elemento {
+  /* ID */
+  color: blueviolet;
+}
+
+p {
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+  /* ancho de cada letra -> bold(negrita) o con números 700 */
+  font-style: italic;
+  /*text-align: justify;  con justify coje todas las líneas y trata de ponerlas igual en el fondo, no que una línea termine antes que la otra por falta de texto o que otra le quede faltando un espacio y así, no! trata de llevarlas todas que empiezen igual y que terminen igual con letras nunca termina con un espacio y todo esto lo hace cambiandole el tamaño a los espacios para tratar que todas lleguen hasta el final con una letra */
+  text-align: start;
+  /* Este nos ayuda para cuando hagamos páginas para todo el mundo ya que hay algunos paises donde se escribe de derecha a izquierda y no como latinoamerica que se escribe de izquierda a derecha, esto se configura automaticamente con el lenguaje del computador de donde entre la persona en vez de darle estaticamente left o right */
+  text-decoration: line-through overline underline;
+  /* le damos decoración al texto o presentación*/
+}
+
+#parrafo {
+  color: cadetblue;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 3;
+  /* todos los atributos de línea le colocamos line y nos lo muestra pero con line-height nos indica la distancia que debe de haber entre una línea y la siguiente línea */
+  letter-spacing: 3px;
+  /* Letter es para trabajar con las letras y sus espacios y decirles cuanto espacio quiero entre una letra y otra */
+  text-transform: uppercase;
+  /* Nos sirve para transformar el texto ya sea todo en mayúsculas, minúsculas o capitalizarlo (Las primeras letras en mayúsculas) nos ayuda mucho para pasar un texto normal a un texto a mayúsculas ignorando las que ya estan en mayúsculas se quedan iguales*/
+}
+
+button {
+  letter-spacing: 10px;
+}
+
+@font-face {
+  font-family: "kemtch";
+  src: url(Fonts/Rubik/RubikScribble-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "kemtch2";
+  src: url(Fonts/Playfair/static/PlayfairDisplay-Italic.ttf) format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "kemtch2";
+  src: url(Fonts/Playfair/static/PlayfairDisplay-Black.ttf);
+  font-weight: 800;
+}
+
+ol {
+  font-family: kemtch2;
+  font-weight: 500;
+  color: rebeccapurple;
+}
+
+div {
+  background-color: aqua;
+  width: 30px;
+  height: 25px;
+  padding: 5px 100px 30px 60px;
+  /*padding: 30px 0px 20px 0px; Cuando tenemos un shorthand recordemos que funciona en sentido de las manecillas del reloj arriba, derecha, abajo e izquierda. Los shorthand tienen 3 opciones diferentes a elegir 1. con un solo valor 20px (Todo), 2. con 2 valores 20px 20px (vertical y horizontal), 3. con 4 valores 20px 20px 20px 20px (arriba, derecha, abajo e izquierda) */
+}
+
+.divcito1 {
+  margin-bottom: 30px;
+}
+
+/* para esta situación debemos de tener en cuenta el margin-collapse lo cual nos indica que si los dos divcitos tienen margin-top y margin bot para separarse entre si va a coger entre los dos el que sea mas mayor y no la suma de los dos que en este caso sería 40px sino qu coge a 30px que es el mayor entre 20px y 30px */
+.divcito2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+input {
+  width: 400px;
+  height: 60px;
+}
+
+:placeholder-shown {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+h1 {
+  background-color: blueviolet;
+  height: 60px;
+  width: 90%;
+  /* Cuando hablamos de porcentajes lo que debemos de tener en cuenta es que este se basa en la caja que lo contiene por ejemplo si la caja padre es de 1000px y le decimos dame un width de 90% la caja hija tendra 900px es decir no todo el 100% de la caja que serían los 1000px */
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+.card {
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  width: 300px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 20%;
+  /* Cuando le asignamos margin auto nos va a centrar de manera horizontal el div */
+  border-radius: 20px;
+  border-width: 10px;
+  border-style: solid;
+}
+
+h1 {
+  padding-top: 20px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+p {
+  background-color: lightcoral;
+  margin: 10px;
+  border-radius: 10px;
+}
