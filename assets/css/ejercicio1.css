@@ -9,11 +9,26 @@ body {
   width: 300px;
   padding-bottom: 20px;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   /* Cuando le asignamos margin auto nos va a centrar de manera horizontal el div */
   border-radius: 20px;
   border-width: 10px;
   border-style: solid;
+  box-shadow: 0px 0px 100px;
+}
+
+input {
+  border: none;
+  margin: 5px;
+  border-bottom: 3px solid;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: lightgreen;
+  text-align: center;
+}
+
+input:focus {
+  border: none;
 }
 
 h1 {
@@ -35,3 +50,13 @@ p {
   margin: 10px;
   border-radius: 10px;
 }
+
+/*
+
+Debemos de hablar del box-sizing es decir el tamaño de la caja este viene precedido por 2 propiedades:
+
+1. box-sizing: content-box-> el cual nos dice que tenemos un div el cual solamente tiene 100px, ahora si le agregamos mas cosas como lo son 10px de border, 20px de padding y 30px de margin lo que hara el border-box es que acumulara todo y sumara todos estos además de los 100px del div quedaría en total de 160px en total por todos los lados de la caja o del div.
+
+2. box-sizing: border-box-> lo cual le indica al navegador que vamos a comenzar a contar después del borde hacía afuera que sería el margin, es decir tenemos el div o la caja con 100px, ahora si le agregamos mas cosas como lo son 10px de border, 20px de padding se ajustara interiormente para quedar dentro de los 100px, es decir tendremos 70px del contenido y 10px+20px del borde y del padding para completar los 100 faltantes pero si deseamos agregar un margin de 30px este si va a sumar por fuera, entonces la caja resultante quedaría en 130px por el margin externo ya que no lo cuenta dentro de sus 2 características
+
+*/
