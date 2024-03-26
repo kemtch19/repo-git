@@ -1,0 +1,30 @@
+div {
+  background-color: #aaa5;
+  padding: 20px;
+  font-family: sans-serif;
+  border-left: 5px solid #1118;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  font-size: 15px;
+  color: #1116;
+}
+
+/* Cuando trabajemos con porcentajes % debemos de recordar que esta medida es con respecto al padre no a el mismo */
+p {
+  background-color: #f00;
+  color: #7779;
+  width: 50vw;
+}
+
+/* Con las medidas relativas siempre vamos a trabajar con respecto al font-size del contenedor padre por ejemplo si el div tiene un font-size de 30px=1em ahora 2em=60px, es relativo al font-size del contenedor padre */
+
+/* Ahora con rem es diferente ya que este se basa es en el elemento raíz el cual en este caso es html el cual dependiendo de su font-size el rem se adapta a este mismo, hay que tener cuidado en diferenciarlo */
+
+/* Cuando queramos utilizar medidas según la adaptación de la pantalla es decir el viewport debemos de utilizar widht con vw y height con vh para que mientras mas pequeña la pantalla o vayamos poniendo mas pequeña la ventana del navegador o la vista que tenemos de la página. La cual se va adaptando a estas medidas y es mas que todo utilizado en ventanas modales */
+
+/* También tenemos las unidades de medida vmin y vmax lo cual coje al vh y vw y entre esos dos escoge cual es el menor o cual es el mayor y lo toma como maximo o como mínimo  */

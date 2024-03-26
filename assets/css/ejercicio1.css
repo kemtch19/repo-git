@@ -35,6 +35,7 @@ h1 {
   padding-top: 20px;
   text-decoration: underline;
   margin-bottom: 0;
+  color: #0ff;
 }
 
 h2 {
@@ -43,12 +44,15 @@ h2 {
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 2px;
+  color: rgba(245, 40, 145, 0.9);
 }
 
 p {
   background-color: lightcoral;
   margin: 10px;
   border-radius: 10px;
+  color: hsl(131, 40%, 70%);
+  /* recordemos que los colores pastel se caracterizan por tener poca saturación y mucha iluminación es decir bastante en el último y bajito en el segundo elemento */
 }
 
 /*

@@ -1,0 +1,130 @@
+.padre {
+  width: 40vw;
+  height: 20vh;
+  margin: auto;
+  text-align: center;
+  background-color: #f00;
+  color: #000;
+  padding: 30px;
+}
+
+.padre p {
+  text-align: justify;
+}
+
+.img {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  background-color: antiquewhite;
+  background-image: url("https://w0.peakpx.com/wallpaper/561/639/HD-wallpaper-wrench-watch-dogs-2-watcogs-2.jpg");
+  background-size: 40px;
+  /* Con el background-size tenemos contain que es uno de los valores el cual nos indica que va a meter la imagen al menos una vez, por otro lado tenemos a cover el cual nos ayuda con la imagen ya que si por ejemplo le damos un tamaño en el cual se esta repitiendo lo que debemos de tener en cuenta es que cover se adapta al tamño del contenedor por ende lo que nos ayuda es a que no se repita nunca la imagen y se adapte al tamaño que le damos */
+  background-position: 50px top;
+  background-repeat: repeat-y;
+}
+
+.img2 {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  background-color: red;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/039dd740666785.5787ecc518aa5.jpg");
+  background-size: 40px;
+  /* Con el background-size tenemos contain que es uno de los valores el cual nos indica que va a meter la imagen al menos una vez, por otro lado tenemos a cover el cual nos ayuda con la imagen ya que si por ejemplo le damos un tamaño en el cual se esta repitiendo lo que debemos de tener en cuenta es que cover se adapta al tamño del contenedor por ende lo que nos ayuda es a que no se repita nunca la imagen y se adapte al tamaño que le damos */
+  background-position: 50px top;
+  background-repeat: repeat-x;
+}
+
+.img3 {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  background-color: blue;
+  background-image: url("https://e0.pxfuel.com/wallpapers/652/514/desktop-wallpaper-wrench-watch-dogs-2-thumbnail.jpg");
+  background-size: cover;
+  /* Con el background-size tenemos contain que es uno de los valores el cual nos indica que va a meter la imagen al menos una vez, por otro lado tenemos a cover el cual nos ayuda con la imagen ya que si por ejemplo le damos un tamaño en el cual se esta repitiendo lo que debemos de tener en cuenta es que cover se adapta al tamño del contenedor por ende lo que nos ayuda es a que no se repita nunca la imagen y se adapte al tamaño que le damos */
+}
+
+.img4 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: yellow;
+  background-image: url("https://e0.pxfuel.com/wallpapers/652/514/desktop-wallpaper-wrench-watch-dogs-2-thumbnail.jpg");
+  background-size: contain;
+  /* Con el background-size tenemos contain que es uno de los valores el cual nos indica que va a meter la imagen al menos una vez, por otro lado tenemos a cover el cual nos ayuda con la imagen ya que si por ejemplo le damos un tamaño en el cual se esta repitiendo lo que debemos de tener en cuenta es que cover se adapta al tamño del contenedor por ende lo que nos ayuda es a que no se repita nunca la imagen y se adapte al tamaño que le damos */
+  background-position: 50px top;
+  background-repeat: no-repeat;
+}
+
+.img5 {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  background-color: blue;
+  background-image: url("https://e0.pxfuel.com/wallpapers/652/514/desktop-wallpaper-wrench-watch-dogs-2-thumbnail.jpg");
+  background-size: cover;
+  /* Con el background-size tenemos contain que es uno de los valores el cual nos indica que va a meter la imagen al menos una vez, por otro lado tenemos a cover el cual nos ayuda con la imagen ya que si por ejemplo le damos un tamaño en el cual se esta repitiendo lo que debemos de tener en cuenta es que cover se adapta al tamño del contenedor por ende lo que nos ayuda es a que no se repita nunca la imagen y se adapte al tamaño que le damos */
+  background-attachment: fixed;
+}
+
+.gradiante {
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(black, green 40%, transparent);
+}
+
+.gradiante2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, green, blue, black, yellow);
+  /* con los grandiantes también le podemos dar la dirección del gradiante en todas las direcciones top, bottom, left, right al igual que le podemos decir que sea lineal o en radio o decirle cuanto color de cada uno queremos green 40% y también tenemos el conic gradiant que ufff le da un super color */
+}
+
+.gradiante3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(green, blue, orange, transparent);
+}
+
+.gradiante4 {
+  width: 100%;
+  height: 200px;
+  background: radial-gradient(green, transparent);
+}
+
+.caja-shadow-padre {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Cuando trabajamos con sombras o shadows tenemos 3 tipos de estas la 1 es box-shadow para una caja o un div, la 2 es la text-shadow para los textos o fuentes y la última es drop-shadow para darsela a cualquier componente */
+.caja-shadow-hijo {
+  color: rgba(0, 255, 255, 0.591);
+  font-weight: 100;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  box-shadow: 20px 10px 100px 20px #0007;
+  /* el primer elemento que me pide el box-shadow es cuanto quiere que se mueva horizontalmente a la derecha, luego cuanto se corre la sombra en forma vertical hacía abajo, luego el desenfoque o difuminado como cuando pasamos el ripio de un sacapuntas por una hoja y lo difuminabamos por último cuanto quiere que la sombra se expanda se agrande y por último pide es el color al igual que también podemos invertir los parametros colocando -100 para que la sombra es vez de abajo se coloque hacía arriba, etc. Para utilizar la otra sombra debemos de llamar a la propiedad filter: drop-shadow(0px 0px 3px #000) y adentro le metemos como si fuera una sombra normal pero todo esto en base a elementos con fondo transparente ya que no se dejan colocar box-shadow */
+}
+
+.caja-shadow-hijo p {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  list-style: none;
+  line-height: 0.9;
+  text-align: justify;
+  font-size: 14px;
+  text-shadow: 10px 10px 20px yellow;
+}
